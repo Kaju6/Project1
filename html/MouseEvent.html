@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mouse Event</title>
+  </head>
+  <body>
+    <!--onclick onmousemove(noy use more) ondblclick  onmouseover onmouseenter onmouseout onmousedown onmouseover onmouseup onmousewheel-->
+    <button onclick="console.log('button cick');">click</button>
+    <p onclick="alert('button cick');">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, maiores
+      earum eveniet asperiores voluptates optio ducimus illo, obcaecati sunt
+      tempora perferendis error eos iusto neque esse debitis harum, dicta omnis?
+    </p>
+    <div
+      style="height: 100px; width: 50px; background-color: blue"
+      onclick="alert('click on div');"
+    ></div>
+    <br />
+    <hr />
+    <div
+      style="height: 100px; width: 50px; background-color: red"
+      ondblclick="alert(' double click on div');"
+      onmousemove="console.log('on mouse move ')"
+      onmouseenter="console.log('on mouse enter ')"
+      onmouseleave="console.log('on mouse leave')"
+      onmouseout="console.log('on mouse out')"
+      onmouseup="console.log('on mouse up')"
+      onmouseover="console.log('on mouse over')"
+      onmousewheel="console.log('on whheel out')"
+    ></div>
+  </body>
+</html>

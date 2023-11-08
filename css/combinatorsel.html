@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Combinator selector</title>
+    <style>
+        
+     /* div p{
+            color: red;
+            font-size: larger;
+            
+        }*/
+        /*div>p{
+            color: green;
+            font-size: xx-large;
+        }*/
+       div+p{
+            color: green;
+            font-size: xx-large;
+       }
+        /*div~p{
+            color: green;
+            font-size: xx-large;
+        }*/
+    </style>
+  </head>
+  <body>
+    <!--selectors that are creatated using the relation between elemennt
+decedent(using space), child(using >), adjecent siblings(using +) ,general siblings(using ~)-->
+inlin
+<div class="div1">
+    <p class="para 1">para 1</p>
+    <p class="para 2">para 2</p>
+    <div class="div2">
+      <p class="para 3">para 3</p>
+      <p  class="para 4">para 4</p>
+    </div>
+    <p>para 10</p>
+    <p>para 11</p>
+  </div>
+
+  <p>para 5</p>
+  <p>para 6</p>
+</body>
+</html>

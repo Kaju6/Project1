@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    selector :pseudo-element  {
+        property:value;
+    }
+  -->
+<style>
+    #para::first-line{
+        color: blueviolet;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #para::first-letter{
+        color: green;
+        font-size: 50px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+#para2::before {
+    content:'*****';
+}
+#para2::after{
+    content:'++++++';
+}
+ul li::marker{
+    color:green;
+    font-size: larger;
+}
+p::selection{
+    background-color: pink;
+    color: blue;
+}
+</style>
+    <title>pseudo-element</title>
+  </head>
+  <body>
+    <!--applies styling to the secific parts of the element-->
+
+    <p id="para">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ut
+      dolores fuga laborum, delectus commodi eius a atque dolorem quidem eos!
+      Consequuntur nam aliquid animi dolores amet voluptatibus. Et, officiis?
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo illo
+      fugiat magni quidem molestiae harum corrupti voluptas? Molestiae, iure
+      sunt? Odio dicta sit veritatis facilis rerum, possimus excepturi sint est
+      eligendi commodi molestias iste in ullam quidem? Quos quisquam iste saepe
+      eius sit, libero optio facilis blanditiis? Dolorum, impedit.
+    </p>
+    <p id="para2">This is a paragraph</p>
+    <ol class="aa">
+        <li>math</li>
+        <li>sci</li>
+        <li>sst</li>
+    </ol>
+    <ul>
+        <li>math</li>
+        <li>sci</li>
+        <li>sst</li>
+    </ul>
+  </body>
+</html>

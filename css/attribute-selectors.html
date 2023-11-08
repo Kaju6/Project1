@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--element[attributr]{
+    propert:value;
+  }-->
+    <title>Attribute-selectors</title>
+    <style>
+      a[target] {
+        color: red;
+      }
+      a[target="_blank"] {
+        color: yellow;
+      }
+      p[class="check"] {
+        border: 2px solid purple;
+      }
+      p[class~="sample"] {
+        border: 4px dashed green;
+      }
+      p[class|="lorem"] {
+        border: 6px dotted greenyellow;
+      }
+      p[title^="panda"] {
+        background-color: blue;
+      }
+      p[title$="happy"] {
+        color:red;
+      }
+      p[title*="app"] {
+        color: darkturquoise;
+        font-size: larger;
+      }
+      
+
+      /* p[class] {
+        color: blue;
+      } */
+    </style>
+  </head>
+  <body>
+    <!--it applies styling on basis of attribute and the value of attribute of the element
+    1.[attribute] 2.[attribute ='value'](match eaxct value) 3.[attribute~=value] should contain this value
+        4.[attribute|='value'] eaxct match or value follwed by hyphen(-) 5.[attribute^='value'] the value should start with given value
+        6.[attribute$='value'] the value should end with given value 7.[attribute*='value']
+-->
+  </body>
+  <a href="">sample1</a>
+  <a href="" target="_self">sample2</a>
+  <a href="" target="_blank">sample3</a>
+  <a href="" target="_blank">sample4</a>
+  <p class="check sample " title="panda">hfhfbvghfhfhgfghf</p>
+  <p class="check" title="panda-happy">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ea
+    eligendi necessitatibus ducimus eos cumque officiis consequuntur similique
+    inventore illum animi totam optio, temporibus placeat! Accusamus deleniti
+    unde ipsam ad!
+  </p>
+  <p class="lorem" title="happy-panda">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ea
+    eligendi necessitatibus ducimus eos cumque officiis consequuntur similique
+    inventore illum animi totam optio, temporibus placeat! Accusamus deleniti
+    unde ipsam ad!
+  </p>
+  <p class="lorem-sample" title="cutehappy">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ea
+    eligendi necessitatibus ducimus eos cumque officiis consequuntur similique
+    inventore illum animi totam optio, temporibus placeat! Accusamus deleniti
+    unde ipsam ad!
+  </p>
+</html>

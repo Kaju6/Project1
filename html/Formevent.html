@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form event</title>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        name=""
+        id=""
+        onblur="console.log('input field onblur now!!!!')"
+        onfocus=" console.log('input field onfocus now!!!!') "
+      />
+      <hr />
+      <br />
+      <br />
+      <label>onchange event</label>
+      <input
+        type="text"
+        name=""
+        id=""
+        value="kajal"
+        onchange="console.log('value change')"
+        oninput="console.log('user added input')"
+      />
+      <br>
+      <hr>
+      <br>
+      <input type="text"
+      title="no allowed special char"
+      required
+      maxlength="5"
+      oninvalid="console.log('invalid value')"
+      onselect="console.log('value selected')"/>
+      
+
+      <input type="submit" value="Submit" >
+    </form>
+  </body>
+</html>
