@@ -5,10 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+import { LoginComponent } from './login/login.component';
+
+
 @NgModule({
   declarations: [ // compoent/pipr/directive
-    AppComponent,
-    HomeComponent
+    AppComponent, HomeComponent, LoginComponent,
+    
   ],
   imports: [//module
     BrowserModule,
