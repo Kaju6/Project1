@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+
+  constructor(private router: Router){} //constuctor section
+
+
+  //LH, methods
+  signUpCompo(){
+     
+     
+     console.log("signcompo fun calling");
+     
+     this.router.navigateByUrl("signUp");
+  }
 
 }
